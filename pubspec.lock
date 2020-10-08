@@ -89,9 +89,11 @@ packages:
   navy:
     dependency: "direct main"
     description:
-      path: "../navy"
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: "9e387e0a061c37ec7fe8dd5e90f20cea3ccf31c3"
+      url: "https://github.com/yellow-factory/navy.git"
+    source: git
     version: "1.0.0"
   path:
     dependency: transitive

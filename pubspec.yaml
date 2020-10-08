@@ -15,11 +15,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   navy:
-    path: ../navy
-
-dependency_overrides:
-  navy:
-    path: ../navy
+    git: https://github.com/yellow-factory/navy.git
 
 dev_dependencies:
   flutter_test:
