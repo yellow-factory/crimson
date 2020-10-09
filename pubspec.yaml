@@ -23,6 +23,6 @@ dev_dependencies:
 
 flutter:
   # Adds code generation (synthetic package) support 
-  generate: true
+  generate: false
 
 
