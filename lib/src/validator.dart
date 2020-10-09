@@ -6,11 +6,11 @@ import 'generated/l10n/crimson_localizations.dart';
 
 class Validator<T> {
   final BuildContext context;
-  final _validators = List<FunctionOf1<T, FunctionOf<String>>>();
+  final _validators = List<FunctionOf1<T, FunctionOf0<String>>>();
 
   Validator(this.context);
 
-  void add(PredicateOf1<T> isNotValid, FunctionOf<String> error) {
+  void add(PredicateOf1<T> isNotValid, FunctionOf0<String> error) {
     _validators.add((T t) => isNotValid(t) ? error : null);
   }
 
