@@ -32,8 +32,8 @@ class NumberValidator extends Validator<num> {
   void max(int max) {
     add(
       (t) => t != null && t > max,
-      () => 'Please enter a number lower than $max',
-    );
+      () => CrimsonLocalizations.of(context).numberMax,
+    ); //'Please enter a number lower than $max',
   }
 
   void min(int min) {
