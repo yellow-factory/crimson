@@ -98,38 +98,77 @@ abstract class CrimsonLocalizations {
     Locale('es')
   ];
 
-  // NumberValidator.max
+  /// NumberValidator.max
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a number lower than {max}'**
   String get numberMax;
 
-  // NumberValidator.min
+  /// NumberValidator.min
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a number greater than {min}.'**
   String get numberMin;
 
-  // NumberValidator.negative
+  /// NumberValidator.negative
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a negative number'**
   String get numberNegative;
 
-  // NumberValidator.positive
+  /// NumberValidator.positive
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a positive number'**
   String get numberPositive;
 
-  // NumberValidator.range
+  /// NumberValidator.range
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a number between {min} and {max}.'**
   String numberRange(Object min, Object max);
 
-  // NumberValidator.required
+  /// NumberValidator.required
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter some number different than zero'**
   String get numberRequired;
 
-  // Validator<T>.required
+  /// Validator<T>.required
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter some text'**
   String get required;
 
-  // StringValidator.maxLength
+  /// StringValidator.maxLength
+  ///
+  /// In en, this message translates to:
+  /// **'Max length cannot be greater than {max}'**
   String stringMaxLength(Object max);
 
-  // StringValidator.minLength
+  /// StringValidator.minLength
+  ///
+  /// In en, this message translates to:
+  /// **r'Minimum length cannot be lower than $min'**
   String stringMinLength(Object min);
 
-  // StringValidator.regularExpression
+  /// StringValidator.regularExpression
+  ///
+  /// In en, this message translates to:
+  /// **r'Is not matching the regular expression: $expression'**
   String stringRegularExpression(Object expression);
 
-  // StringValidator.required
+  /// StringValidator.required
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter some text'**
   String get stringRequired;
+
+  /// StringValidator.mail
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email'**
+  String get stringMail;
 }
 
 class _CrimsonLocalizationsDelegate extends LocalizationsDelegate<CrimsonLocalizations> {
@@ -149,14 +188,14 @@ class _CrimsonLocalizationsDelegate extends LocalizationsDelegate<CrimsonLocaliz
 
 CrimsonLocalizations _lookupCrimsonLocalizations(Locale locale) {
   
-  
-  
-  // Lookup logic when only language code is specified.
-  switch (locale.languageCode) {
-    case 'ca': return CrimsonLocalizationsCa();
+
+
+// Lookup logic when only language code is specified.
+switch (locale.languageCode) {
+  case 'ca': return CrimsonLocalizationsCa();
     case 'en': return CrimsonLocalizationsEn();
     case 'es': return CrimsonLocalizationsEs();
-  }
+}
 
   assert(false, 'CrimsonLocalizations.delegate failed to load unsupported locale "$locale"');
   return null;

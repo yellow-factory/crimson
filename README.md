@@ -7,13 +7,7 @@ A new Flutter package project.
 To generate the files needed for Localization:
 
 ````
-gen-l10n 
-    --arb-dir=lib/src/l10n 
-    --template-arb-file=intl_en.arb 
-    --output-localization-file=crimson_localizations.dart 
-    --output-class=CrimsonLocalizations 
-    --no-synthetic-package 
-    --output-dir=lib/l10n/generated
+flutter gen-l10n --arb-dir=l10n --template-arb-file=intl_en.arb --output-localization-file=crimson_localizations.dart --output-class=CrimsonLocalizations --no-synthetic-package --output-dir=lib/src/generated/l10n
 ````
 
 The file must be imported in the project that uses crimson:

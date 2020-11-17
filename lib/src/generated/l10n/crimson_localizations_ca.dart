@@ -44,9 +44,12 @@ class CrimsonLocalizationsCa extends CrimsonLocalizations {
 
   @override
   String stringRegularExpression(Object expression) {
-    return 'El text no segueix l\'expressió regular: \$expression';
+    return r"El text no segueix l'expressió regular: $expression";
   }
 
   @override
   String get stringRequired => 'Introdueix un text.';
+
+  @override
+  String get stringMail => 'El text no és un correu elctrònic vàlid';
 }

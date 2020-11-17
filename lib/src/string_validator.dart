@@ -1,4 +1,5 @@
 import 'package:crimson/src/validator.dart';
+import 'package:email_validator/email_validator.dart';
 import 'package:flutter/widgets.dart';
 import 'generated/l10n/crimson_localizations.dart';
 
@@ -39,5 +40,12 @@ class StringValidator extends Validator<String> {
       (t) => !regExp.hasMatch(t),
       () => CrimsonLocalizations.of(context).stringRegularExpression(expression),
     ); //'Is not matching the regular expression: $expression',
+  }
+
+  void mail() {
+    add(
+      (t) => EmailValidator.validate(t),
+      () => CrimsonLocalizations.of(context).stringMail,
+    ); //"Please enter a valid email"
   }
 }

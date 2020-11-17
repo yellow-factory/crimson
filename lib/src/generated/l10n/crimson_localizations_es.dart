@@ -49,4 +49,7 @@ class CrimsonLocalizationsEs extends CrimsonLocalizations {
 
   @override
   String get stringRequired => 'Introduce un texto.';
+
+  @override
+  String get stringMail => 'El texto no es un correo electrónico válido';
 }

@@ -56,5 +56,7 @@
   "stringRequired": "Please enter some text",
   "@stringRequired": {
     "description": "StringValidator.required"
-  }
+  },
+  "stringMail": "Please enter a valid email",
+  "@stringMail": { "description": "StringValidator.mail" }
 }

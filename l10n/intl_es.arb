@@ -56,5 +56,7 @@
   "stringRequired": "Introduce un texto.",
   "@stringRequired": {
     "description": "StringValidator.required"
-  }
+  },
+  "stringMail": "El texto no es un correo electrónico válido",
+  "@stringMail": { "description": "StringValidator.mail" }
 }
