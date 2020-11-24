@@ -44,7 +44,7 @@ class StringValidator extends Validator<String> {
 
   void mail() {
     add(
-      (t) => EmailValidator.validate(t),
+      (t) => t != null && !EmailValidator.validate(t),
       () => CrimsonLocalizations.of(context).stringMail,
     ); //"Please enter a valid email"
   }
