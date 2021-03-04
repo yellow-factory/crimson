@@ -44,7 +44,7 @@ class CrimsonLocalizationsCa extends CrimsonLocalizations {
 
   @override
   String stringRegularExpression(Object expression) {
-    return r"El text no segueix l'expressió regular: $expression";
+    return 'El text no segueix l\'expressió regular: \$expression';
   }
 
   @override

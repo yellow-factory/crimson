@@ -38,7 +38,7 @@ import 'crimson_localizations_es.dart';
 ///   # Internationalization support.
 ///   flutter_localizations:
 ///     sdk: flutter
-///   intl: 0.16.1
+///   intl: any # Use the pinned version from flutter_localizations
 ///
 ///   # rest of dependencies
 /// ```
@@ -63,12 +63,12 @@ import 'crimson_localizations_es.dart';
 /// be consistent with the languages listed in the CrimsonLocalizations.supportedLocales
 /// property.
 abstract class CrimsonLocalizations {
-  CrimsonLocalizations(String locale) : assert(locale != null), localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  CrimsonLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   // ignore: unused_field
   final String localeName;
 
-  static CrimsonLocalizations of(BuildContext context) {
+  static CrimsonLocalizations? of(BuildContext context) {
     return Localizations.of<CrimsonLocalizations>(context, CrimsonLocalizations);
   }
 
@@ -149,13 +149,13 @@ abstract class CrimsonLocalizations {
   /// StringValidator.minLength
   ///
   /// In en, this message translates to:
-  /// **r'Minimum length cannot be lower than $min'**
+  /// **'Minimum length cannot be lower than \$min'**
   String stringMinLength(Object min);
 
   /// StringValidator.regularExpression
   ///
   /// In en, this message translates to:
-  /// **r'Is not matching the regular expression: $expression'**
+  /// **'Is not matching the regular expression: \$expression'**
   String stringRegularExpression(Object expression);
 
   /// StringValidator.required
@@ -197,6 +197,11 @@ switch (locale.languageCode) {
     case 'es': return CrimsonLocalizationsEs();
 }
 
-  assert(false, 'CrimsonLocalizations.delegate failed to load unsupported locale "$locale"');
-  return null;
+
+  throw FlutterError(
+    'CrimsonLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.'
+  );
 }

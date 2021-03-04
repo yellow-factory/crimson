@@ -6,7 +6,7 @@ import 'generated/l10n/crimson_localizations.dart';
 
 class Validator<T> {
   final BuildContext context;
-  final _validators = List<FunctionOf1<T, FunctionOf0<String>>>();
+  final _validators = [];
 
   Validator(this.context);
 
@@ -14,9 +14,9 @@ class Validator<T> {
     _validators.add((T t) => isNotValid(t) ? error : null);
   }
 
-  FunctionOf1<T, String> get value {
+  FunctionOf1<T, String?> get value {
     return (T t) {
-      String result;
+      String? result;
       for (var isValid in _validators) {
         var partialResult = isValid(t);
         if (partialResult != null) {
@@ -34,7 +34,14 @@ class Validator<T> {
   void required() {
     add(
       (t) => t == null,
-      () => CrimsonLocalizations.of(context).required,
+      () => crimsonLocalizations.required,
     ); // 'Please enter some text');
+  }
+
+  CrimsonLocalizations get crimsonLocalizations {
+    var cl = CrimsonLocalizations.of(context);
+    return cl == null
+        ? throw Exception("Have you forgot to add the CrimsonLocalizations Delegate?")
+        : cl;
   }
 }
