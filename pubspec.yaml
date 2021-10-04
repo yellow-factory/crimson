@@ -2,7 +2,6 @@ name: crimson
 description: Common validations to be used in Flutter projects.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 0.0.2
-author: The Yellow Factory
 homepage: www.theyellowfactory.com
 
 environment:
