@@ -1,9 +1,7 @@
 
-// ignore: unused_import
-import 'package:intl/intl.dart' as intl;
-import 'crimson_localizations.dart';
 
-// ignore_for_file: unnecessary_brace_in_string_interps
+
+import 'crimson_localizations.dart';
 
 /// The translations for English (`en`).
 class CrimsonLocalizationsEn extends CrimsonLocalizations {
@@ -23,7 +21,7 @@ class CrimsonLocalizationsEn extends CrimsonLocalizations {
 
   @override
   String numberRange(Object min, Object max) {
-    return 'Please enter a number between ${min} and ${max}.';
+    return 'Please enter a number between $min and $max.';
   }
 
   @override
@@ -34,7 +32,7 @@ class CrimsonLocalizationsEn extends CrimsonLocalizations {
 
   @override
   String stringMaxLength(Object max) {
-    return 'Max length cannot be greater than ${max}';
+    return 'Max length cannot be greater than $max';
   }
 
   @override
@@ -52,4 +50,7 @@ class CrimsonLocalizationsEn extends CrimsonLocalizations {
 
   @override
   String get stringMail => 'Please enter a valid email';
+
+  @override
+  String get datetimeRequired => 'Please enter a valid date.';
 }

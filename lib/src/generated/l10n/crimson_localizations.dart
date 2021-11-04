@@ -1,7 +1,6 @@
 
 import 'dart:async';
 
-// ignore: unused_import
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -65,7 +64,6 @@ import 'crimson_localizations_es.dart';
 abstract class CrimsonLocalizations {
   CrimsonLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
-  // ignore: unused_field
   final String localeName;
 
   static CrimsonLocalizations? of(BuildContext context) {
@@ -169,6 +167,12 @@ abstract class CrimsonLocalizations {
   /// In en, this message translates to:
   /// **'Please enter a valid email'**
   String get stringMail;
+
+  /// DateTimeValidator.required
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid date.'**
+  String get datetimeRequired;
 }
 
 class _CrimsonLocalizationsDelegate extends LocalizationsDelegate<CrimsonLocalizations> {
@@ -176,7 +180,7 @@ class _CrimsonLocalizationsDelegate extends LocalizationsDelegate<CrimsonLocaliz
 
   @override
   Future<CrimsonLocalizations> load(Locale locale) {
-    return SynchronousFuture<CrimsonLocalizations>(_lookupCrimsonLocalizations(locale));
+    return SynchronousFuture<CrimsonLocalizations>(lookupCrimsonLocalizations(locale));
   }
 
   @override
@@ -186,17 +190,15 @@ class _CrimsonLocalizationsDelegate extends LocalizationsDelegate<CrimsonLocaliz
   bool shouldReload(_CrimsonLocalizationsDelegate old) => false;
 }
 
-CrimsonLocalizations _lookupCrimsonLocalizations(Locale locale) {
-  
+CrimsonLocalizations lookupCrimsonLocalizations(Locale locale) {
 
 
-// Lookup logic when only language code is specified.
-switch (locale.languageCode) {
-  case 'ca': return CrimsonLocalizationsCa();
+  // Lookup logic when only language code is specified.
+  switch (locale.languageCode) {
+    case 'ca': return CrimsonLocalizationsCa();
     case 'en': return CrimsonLocalizationsEn();
     case 'es': return CrimsonLocalizationsEs();
-}
-
+  }
 
   throw FlutterError(
     'CrimsonLocalizations.delegate failed to load unsupported locale "$locale". This is likely '

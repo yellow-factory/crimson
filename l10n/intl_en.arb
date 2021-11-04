@@ -59,6 +59,9 @@
   },
   "stringMail": "Please enter a valid email",
   "@stringMail": { "description": "StringValidator.mail" },
-  "stringMail2": "Please enter a valid email",
-  "@stringMail2": { "description": "StringValidator.mail" }
+  "datetimeRequired": "Please enter a valid date.",
+  "@datetimeRequired": {
+    "description": "DateTimeValidator.required"
+  }
+
 }

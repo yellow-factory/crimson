@@ -1,9 +1,7 @@
 
-// ignore: unused_import
-import 'package:intl/intl.dart' as intl;
-import 'crimson_localizations.dart';
 
-// ignore_for_file: unnecessary_brace_in_string_interps
+
+import 'crimson_localizations.dart';
 
 /// The translations for Catalan Valencian (`ca`).
 class CrimsonLocalizationsCa extends CrimsonLocalizations {
@@ -23,7 +21,7 @@ class CrimsonLocalizationsCa extends CrimsonLocalizations {
 
   @override
   String numberRange(Object min, Object max) {
-    return 'Introdueix un nombre entre ${min} i ${max}.';
+    return 'Introdueix un nombre entre $min i $max.';
   }
 
   @override
@@ -34,12 +32,12 @@ class CrimsonLocalizationsCa extends CrimsonLocalizations {
 
   @override
   String stringMaxLength(Object max) {
-    return 'La llargada del text no pot ser major de ${max} caràcters.';
+    return 'La llargada del text no pot ser major de $max caràcters.';
   }
 
   @override
   String stringMinLength(Object min) {
-    return 'La llargada del text no pot ser menor de ${min} caràcters.';
+    return 'La llargada del text no pot ser menor de $min caràcters.';
   }
 
   @override
@@ -52,4 +50,7 @@ class CrimsonLocalizationsCa extends CrimsonLocalizations {
 
   @override
   String get stringMail => 'El text no és un correu elctrònic vàlid';
+
+  @override
+  String get datetimeRequired => 'Introdueix una data vàlida.';
 }

@@ -1,9 +1,7 @@
 
-// ignore: unused_import
-import 'package:intl/intl.dart' as intl;
-import 'crimson_localizations.dart';
 
-// ignore_for_file: unnecessary_brace_in_string_interps
+
+import 'crimson_localizations.dart';
 
 /// The translations for Spanish Castilian (`es`).
 class CrimsonLocalizationsEs extends CrimsonLocalizations {
@@ -23,7 +21,7 @@ class CrimsonLocalizationsEs extends CrimsonLocalizations {
 
   @override
   String numberRange(Object min, Object max) {
-    return 'Introduce un número entre ${min} i ${max}.';
+    return 'Introduce un número entre $min i $max.';
   }
 
   @override
@@ -34,17 +32,17 @@ class CrimsonLocalizationsEs extends CrimsonLocalizations {
 
   @override
   String stringMaxLength(Object max) {
-    return 'El texto no puede tener más de ${max} carácteres.';
+    return 'El texto no puede tener más de $max carácteres.';
   }
 
   @override
   String stringMinLength(Object min) {
-    return 'El texto no puede tener menos de ${min} carácteres.';
+    return 'El texto no puede tener menos de $min carácteres.';
   }
 
   @override
   String stringRegularExpression(Object expression) {
-    return 'El texto no cumple con la expresión regular ${expression}.';
+    return 'El texto no cumple con la expresión regular $expression.';
   }
 
   @override
@@ -52,4 +50,7 @@ class CrimsonLocalizationsEs extends CrimsonLocalizations {
 
   @override
   String get stringMail => 'El texto no es un correo electrónico válido';
+
+  @override
+  String get datetimeRequired => 'Introduce una fecha válida.';
 }
