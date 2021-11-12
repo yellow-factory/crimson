@@ -57,7 +57,7 @@
   "@stringRequired": {
     "description": "StringValidator.required"
   },
-  "stringMail": "El texto no es un correo electrónico válido",
+  "stringMail": "No es un correo electrónico válido",
   "@stringMail": { "description": "StringValidator.mail" },
   "datetimeRequired": "Introduce una fecha válida.",
   "@datetimeRequired": {

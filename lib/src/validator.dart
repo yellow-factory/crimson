@@ -6,7 +6,7 @@ import 'generated/l10n/crimson_localizations.dart';
 
 class Validator<T> {
   final BuildContext context;
-  final _validators = [];
+  final _validators = <FunctionOf1<T, FunctionOf0<String>?>>[];
 
   Validator(this.context);
 
@@ -24,7 +24,7 @@ class Validator<T> {
             result = partialResult();
             continue;
           }
-          result = "$result\n$partialResult";
+          result = "$result\n${partialResult()}";
         }
       }
       return result;

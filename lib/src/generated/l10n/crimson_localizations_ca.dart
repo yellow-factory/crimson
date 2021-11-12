@@ -1,6 +1,3 @@
-
-
-
 import 'crimson_localizations.dart';
 
 /// The translations for Catalan Valencian (`ca`).
@@ -8,27 +5,27 @@ class CrimsonLocalizationsCa extends CrimsonLocalizations {
   CrimsonLocalizationsCa([String locale = 'ca']) : super(locale);
 
   @override
-  String get numberMax => 'Introdueix un nombre inferior a {max}.';
+  String get numberMax => 'Escriu un nombre inferior a {max}.';
 
   @override
-  String get numberMin => 'Introdueix un nombre major de {min}.';
+  String get numberMin => 'Escriu un nombre major de {min}.';
 
   @override
-  String get numberNegative => 'Introdueix un nombre negatiu.';
+  String get numberNegative => 'Escriu un nombre negatiu.';
 
   @override
-  String get numberPositive => 'Introdueix un nombre positiu.';
+  String get numberPositive => 'Escriu un nombre positiu.';
 
   @override
   String numberRange(Object min, Object max) {
-    return 'Introdueix un nombre entre $min i $max.';
+    return 'Escriu un nombre entre $min i $max.';
   }
 
   @override
-  String get numberRequired => 'Introdueix un número diferent de zero.';
+  String get numberRequired => 'Escriu un nombre diferent de zero.';
 
   @override
-  String get required => 'El camp és obligatori.';
+  String get required => 'El camp és imprescindible.';
 
   @override
   String stringMaxLength(Object max) {
@@ -46,11 +43,11 @@ class CrimsonLocalizationsCa extends CrimsonLocalizations {
   }
 
   @override
-  String get stringRequired => 'Introdueix un text.';
+  String get stringRequired => 'Escriu un text.';
 
   @override
-  String get stringMail => 'El text no és un correu elctrònic vàlid';
+  String get stringMail => 'Escriu un correu electrònic vàlid';
 
   @override
-  String get datetimeRequired => 'Introdueix una data vàlida.';
+  String get datetimeRequired => 'Escriu una data vàlida.';
 }
