@@ -1,3 +1,6 @@
+
+
+
 import 'crimson_localizations.dart';
 
 /// The translations for Spanish Castilian (`es`).
@@ -46,7 +49,7 @@ class CrimsonLocalizationsEs extends CrimsonLocalizations {
   String get stringRequired => 'Introduce un texto.';
 
   @override
-  String get stringMail => 'El correo electrónico no es válido';
+  String get stringMail => 'No es un correo electrónico válido';
 
   @override
   String get datetimeRequired => 'Introduce una fecha válida.';
