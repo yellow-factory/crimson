@@ -57,7 +57,7 @@
   "@stringRequired": {
     "description": "StringValidator.required"
   },
-  "stringMail": "El text no és un correu elctrònic vàlid",
+  "stringMail": "El text no és un correu electrònic vàlid",
   "@stringMail": { "description": "StringValidator.mail" },
   "datetimeRequired": "Introdueix una data vàlida.",
   "@datetimeRequired": {
