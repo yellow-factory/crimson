@@ -173,6 +173,24 @@ abstract class CrimsonLocalizations {
   /// In en, this message translates to:
   /// **'Please enter a valid date.'**
   String get datetimeRequired;
+
+  /// BoolValidator.required
+  ///
+  /// In en, this message translates to:
+  /// **'The value should be true or false.'**
+  String get boolRequired;
+
+  /// BoolValidator.trueRequired
+  ///
+  /// In en, this message translates to:
+  /// **'The value should be true.'**
+  String get trueRequired;
+
+  /// BoolValidator.falseRequired
+  ///
+  /// In en, this message translates to:
+  /// **'The value should be false.'**
+  String get falseRequired;
 }
 
 class _CrimsonLocalizationsDelegate extends LocalizationsDelegate<CrimsonLocalizations> {

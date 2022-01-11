@@ -7,45 +7,45 @@ class NumberValidator extends Validator<num?> {
   NumberValidator(BuildContext context) : super(context);
 
   @override
-  void required() {
+  void required({String? errorMessage}) {
     add(
       (t) => t == null || t == 0,
-      () => crimsonLocalizations.numberRequired,
+      () => errorMessage ?? crimsonLocalizations.numberRequired,
     ); //'Please enter some number different than zero',
   }
 
-  void positive() {
+  void positive({String? errorMessage}) {
     add(
       (t) => t == null || t < 0,
-      () => crimsonLocalizations.numberPositive,
+      () => errorMessage ?? crimsonLocalizations.numberPositive,
     ); //'Please enter a positive number',
   }
 
-  void negative() {
+  void negative({String? errorMessage}) {
     add(
       (t) => t == null || t > 0,
-      () => crimsonLocalizations.numberNegative,
+      () => errorMessage ?? crimsonLocalizations.numberNegative,
     ); //'Please enter a negative number',
   }
 
-  void max(int max) {
+  void max(int max, {String? errorMessage}) {
     add(
       (t) => t != null && t > max,
-      () => crimsonLocalizations.numberMax,
+      () => errorMessage ?? crimsonLocalizations.numberMax,
     ); //'Please enter a number lower than $max',
   }
 
-  void min(int min) {
+  void min(int min, {String? errorMessage}) {
     add(
       (t) => t != null && t < min,
-      () => crimsonLocalizations.numberMin,
+      () => errorMessage ?? crimsonLocalizations.numberMin,
     ); //'Please enter a number greater than $min'
   }
 
-  void range(int min, int max) {
+  void range(int min, int max, {String? errorMessage}) {
     add(
       (t) => t != null && t > min && t < max,
-      () => crimsonLocalizations.numberRange(min, max),
+      () => errorMessage ?? crimsonLocalizations.numberRange(min, max),
     ); //'Please enter a number between $min and $max'
   }
 }

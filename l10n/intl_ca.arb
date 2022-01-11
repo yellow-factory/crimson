@@ -62,5 +62,18 @@
   "datetimeRequired": "Introdueix una data vàlida.",
   "@datetimeRequired": {
     "description": "DateTimeValidator.required"
-  }
+  },
+  "boolRequired": "El valor ha de ser cert o fals.",
+  "@boolRequired": {
+    "description": "BoolValidator.required"
+  },
+  "trueRequired": "El valor ha de ser cert.",
+  "@trueRequired": {
+    "description": "BoolValidator.trueRequired"
+  },
+  "falseRequired": "El valor ha de ser fals.",
+  "@falseRequired": {
+    "description": "BoolValidator.falseRequired"
+  }  
+
 }

@@ -53,4 +53,13 @@ class CrimsonLocalizationsEn extends CrimsonLocalizations {
 
   @override
   String get datetimeRequired => 'Please enter a valid date.';
+
+  @override
+  String get boolRequired => 'The value should be true or false.';
+
+  @override
+  String get trueRequired => 'The value should be true.';
+
+  @override
+  String get falseRequired => 'The value should be false.';
 }

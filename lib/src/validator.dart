@@ -31,10 +31,10 @@ class Validator<T> {
     };
   }
 
-  void required() {
+  void required({String? errorMessage}) {
     add(
       (t) => t == null,
-      () => crimsonLocalizations.required,
+      () => errorMessage ?? crimsonLocalizations.required,
     ); // 'Please enter some text');
   }
 

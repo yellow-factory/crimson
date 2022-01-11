@@ -49,8 +49,17 @@ class CrimsonLocalizationsCa extends CrimsonLocalizations {
   String get stringRequired => 'Introdueix un text.';
 
   @override
-  String get stringMail => 'El text no és un correu elctrònic vàlid';
+  String get stringMail => 'El text no és un correu electrònic vàlid';
 
   @override
   String get datetimeRequired => 'Introdueix una data vàlida.';
+
+  @override
+  String get boolRequired => 'El valor ha de ser cert o fals.';
+
+  @override
+  String get trueRequired => 'El valor ha de ser cert.';
+
+  @override
+  String get falseRequired => 'El valor ha de ser fals.';
 }

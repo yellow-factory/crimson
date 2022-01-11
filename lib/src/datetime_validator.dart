@@ -7,10 +7,10 @@ class DateTimeValidator extends Validator<DateTime?> {
   DateTimeValidator(BuildContext context) : super(context);
 
   @override
-  void required() {
+  void required({String? errorMessage}) {
     add(
       (t) => t == null,
-      () => crimsonLocalizations.datetimeRequired,
+      () => errorMessage ?? crimsonLocalizations.datetimeRequired,
     ); //'Please enter some number different than zero',
   }
 }

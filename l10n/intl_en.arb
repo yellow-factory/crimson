@@ -62,6 +62,19 @@
   "datetimeRequired": "Please enter a valid date.",
   "@datetimeRequired": {
     "description": "DateTimeValidator.required"
-  }
+  },
+  "boolRequired": "The value should be true or false.",
+  "@boolRequired": {
+    "description": "BoolValidator.required"
+  },
+  "trueRequired": "The value should be true.",
+  "@trueRequired": {
+    "description": "BoolValidator.trueRequired"
+  },
+  "falseRequired": "The value should be false.",
+  "@falseRequired": {
+    "description": "BoolValidator.falseRequired"
+  }  
+
 
 }
