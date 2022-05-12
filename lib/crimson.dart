@@ -5,3 +5,4 @@ export 'src/string_validator.dart';
 export 'src/number_validator.dart';
 export 'src/datetime_validator.dart';
 export 'src/bool_validator.dart';
+export 'src/validator.dart';
