@@ -30,8 +30,8 @@ class StringValidator extends Validator<String?> {
   }
 
   void regularExpression(String expression,
-      {bool caseSensitive: false, bool multiLine: false, String? errorMessage}) {
-    var regExp = new RegExp(
+      {bool caseSensitive = false, bool multiLine = false, String? errorMessage}) {
+    var regExp = RegExp(
       expression,
       caseSensitive: caseSensitive,
       multiLine: multiLine,

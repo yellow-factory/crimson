@@ -40,8 +40,6 @@ class Validator<T> {
 
   CrimsonLocalizations get crimsonLocalizations {
     var cl = CrimsonLocalizations.of(context);
-    return cl == null
-        ? throw Exception("Have you forgot to add the CrimsonLocalizations Delegate?")
-        : cl;
+    return cl ?? (throw Exception("Have you forgot to add the CrimsonLocalizations Delegate?"));
   }
 }
