@@ -12,8 +12,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # Internationalization support.
   flutter_localizations:
     sdk: flutter
+  intl: ^0.17.0
+  #end Internationalization support.
   navy:
     git: https://github.com/yellow-factory/navy.git
   email_validator: ^2.0.1
