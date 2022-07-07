@@ -24,7 +24,7 @@ class StringValidator extends Validator<String?> {
 
   void minLength(int min, {String? errorMessage}) {
     add(
-      (t) => t != null && t.length > min,
+      (t) => t != null && t.length < min,
       () => errorMessage ?? crimsonLocalizations.stringMinLength(min),
     ); // 'Minimum length cannot be lower than $min');
   }
