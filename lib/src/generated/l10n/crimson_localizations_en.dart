@@ -1,6 +1,3 @@
-
-
-
 import 'crimson_localizations.dart';
 
 /// The translations for English (`en`).
@@ -8,10 +5,14 @@ class CrimsonLocalizationsEn extends CrimsonLocalizations {
   CrimsonLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get numberMax => 'Please enter a number lower than {max}';
+  String numberMax(Object max) {
+    return 'Please enter a number lower than $max';
+  }
 
   @override
-  String get numberMin => 'Please enter a number greater than {min}.';
+  String numberMin(Object min) {
+    return 'Please enter a number greater than $min.';
+  }
 
   @override
   String get numberNegative => 'Please enter a negative number';

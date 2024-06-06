@@ -1,6 +1,3 @@
-
-
-
 import 'crimson_localizations.dart';
 
 /// The translations for Spanish Castilian (`es`).
@@ -8,10 +5,14 @@ class CrimsonLocalizationsEs extends CrimsonLocalizations {
   CrimsonLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
-  String get numberMax => 'Introduce un número inferior a {max}';
+  String numberMax(Object max) {
+    return 'Introduce un número inferior a $max';
+  }
 
   @override
-  String get numberMin => 'Introduce un número superior a {min}.';
+  String numberMin(Object min) {
+    return 'Introduce un número superior a $min.';
+  }
 
   @override
   String get numberNegative => 'Introduce un número negativo.';

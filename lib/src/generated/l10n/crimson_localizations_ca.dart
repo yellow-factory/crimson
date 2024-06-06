@@ -1,6 +1,3 @@
-
-
-
 import 'crimson_localizations.dart';
 
 /// The translations for Catalan Valencian (`ca`).
@@ -8,10 +5,14 @@ class CrimsonLocalizationsCa extends CrimsonLocalizations {
   CrimsonLocalizationsCa([String locale = 'ca']) : super(locale);
 
   @override
-  String get numberMax => 'Introdueix un nombre inferior a {max}.';
+  String numberMax(Object max) {
+    return 'Introdueix un nombre inferior a $max.';
+  }
 
   @override
-  String get numberMin => 'Introdueix un nombre major de {min}.';
+  String numberMin(Object min) {
+    return 'Introdueix un nombre major de $min.';
+  }
 
   @override
   String get numberNegative => 'Introdueix un nombre negatiu.';
