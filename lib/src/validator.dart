@@ -14,7 +14,8 @@ class Validator<T> {
     _validators.add((T t) => isNotValid(t) ? error : null);
   }
 
-  FunctionOf1<T, String?> get value {
+  //TODO: Maybe I can change this name to validate
+  FunctionOf1<T, String?> get validate {
     return (T t) {
       String? result;
       for (var isValid in _validators) {

@@ -1,5 +1,7 @@
 import 'crimson_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Catalan Valencian (`ca`).
 class CrimsonLocalizationsCa extends CrimsonLocalizations {
   CrimsonLocalizationsCa([String locale = 'ca']) : super(locale);

@@ -9,6 +9,8 @@ import 'crimson_localizations_ca.dart';
 import 'crimson_localizations_en.dart';
 import 'crimson_localizations_es.dart';
 
+// ignore_for_file: type=lint
+
 /// Callers can lookup localized strings with an instance of CrimsonLocalizations
 /// returned by `CrimsonLocalizations.of(context)`.
 ///
