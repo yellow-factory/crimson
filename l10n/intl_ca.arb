@@ -46,7 +46,7 @@
       "min": {}
     }
   },
-  "stringRegularExpression": "El text no segueix l'expressió regular: $expression",
+  "stringRegularExpression": "El text no segueix l'expressió regular: {expression}",
   "@stringRegularExpression": {
     "description": "StringValidator.regularExpression",
     "placeholders": {

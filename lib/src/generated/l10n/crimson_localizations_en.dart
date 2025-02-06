@@ -40,12 +40,12 @@ class CrimsonLocalizationsEn extends CrimsonLocalizations {
 
   @override
   String stringMinLength(Object min) {
-    return 'Minimum length cannot be lower than \$min';
+    return 'Minimum length cannot be lower than $min';
   }
 
   @override
   String stringRegularExpression(Object expression) {
-    return 'Is not matching the regular expression: \$expression';
+    return 'Is not matching the regular expression: $expression';
   }
 
   @override

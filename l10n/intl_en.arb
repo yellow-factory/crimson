@@ -39,14 +39,14 @@
       "max": {}
     }
   },
-  "stringMinLength": "Minimum length cannot be lower than $min",
+  "stringMinLength": "Minimum length cannot be lower than {min}",
   "@stringMinLength": {
     "description": "StringValidator.minLength",
     "placeholders": {
       "min": {}
     }
   },
-  "stringRegularExpression": "Is not matching the regular expression: $expression",
+  "stringRegularExpression": "Is not matching the regular expression: {expression}",
   "@stringRegularExpression": {
     "description": "StringValidator.regularExpression",
     "placeholders": {

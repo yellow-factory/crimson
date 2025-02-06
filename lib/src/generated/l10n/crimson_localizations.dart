@@ -148,13 +148,13 @@ abstract class CrimsonLocalizations {
   /// StringValidator.minLength
   ///
   /// In en, this message translates to:
-  /// **'Minimum length cannot be lower than \$min'**
+  /// **'Minimum length cannot be lower than {min}'**
   String stringMinLength(Object min);
 
   /// StringValidator.regularExpression
   ///
   /// In en, this message translates to:
-  /// **'Is not matching the regular expression: \$expression'**
+  /// **'Is not matching the regular expression: {expression}'**
   String stringRegularExpression(Object expression);
 
   /// StringValidator.required
