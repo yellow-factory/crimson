@@ -1,10 +1,9 @@
 import 'package:crimson/src/validator.dart';
-import 'package:flutter/widgets.dart';
 
 //TODO: Make tests of validators
 
 class DateTimeValidator extends Validator<DateTime?> {
-  DateTimeValidator(BuildContext context) : super(context);
+  DateTimeValidator(super.context);
 
   @override
   void required({String? errorMessage}) {

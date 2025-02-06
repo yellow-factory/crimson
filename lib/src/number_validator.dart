@@ -1,8 +1,7 @@
 import 'package:crimson/src/validator.dart';
-import 'package:flutter/widgets.dart';
 
 class NumberValidator extends Validator<num?> {
-  NumberValidator(BuildContext context) : super(context);
+  NumberValidator(super.context);
 
   @override
   void required({String? errorMessage}) {

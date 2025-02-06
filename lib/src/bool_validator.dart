@@ -1,10 +1,9 @@
 import 'package:crimson/src/validator.dart';
-import 'package:flutter/widgets.dart';
 
 //TODO: Make tests of validators
 
 class BoolValidator extends Validator<bool?> {
-  BoolValidator(BuildContext context) : super(context);
+  BoolValidator(super.context);
 
   @override
   void required({String? errorMessage}) {

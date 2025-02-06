@@ -1,4 +1,4 @@
-library crimson;
+library;
 
 export 'src/generated/l10n/crimson_localizations.dart';
 export 'src/string_validator.dart';
