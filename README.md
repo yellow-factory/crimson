@@ -15,7 +15,6 @@ The file must be imported in the project that uses crimson:
 
 ````
     ...
-    import 'package:flutter_gen/gen_l10n/app_localizations.dart';
     import 'package:crimson/l10n/generated/crimson_localizations.dart';
 
     ...

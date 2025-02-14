@@ -1,11 +1,10 @@
 import 'package:crimson/src/validator.dart';
 import 'package:email_validator/email_validator.dart';
-import 'package:flutter/widgets.dart';
 
 //TODO: Make tests of validators
 
 class StringValidator extends Validator<String?> {
-  StringValidator(BuildContext context) : super(context);
+  StringValidator(super.context);
 
   @override
   void required({String? errorMessage}) {
