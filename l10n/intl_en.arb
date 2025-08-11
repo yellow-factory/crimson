@@ -28,7 +28,7 @@
   "@numberRequired": {
     "description": "NumberValidator.required"
   },
-  "required": "Please enter some text",
+  "required": "The field is mandatory.",
   "@required": {
     "description": "Validator<T>.required"
   },

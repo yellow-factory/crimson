@@ -36,7 +36,7 @@ class Validator<T> {
     add(
       (t) => t == null,
       () => errorMessage ?? crimsonLocalizations.required,
-    ); // 'Please enter some text');
+    ); // 'The field is mandatory.');
   }
 
   CrimsonLocalizations get crimsonLocalizations {
