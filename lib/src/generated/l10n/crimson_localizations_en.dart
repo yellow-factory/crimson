@@ -37,12 +37,12 @@ class CrimsonLocalizationsEn extends CrimsonLocalizations {
 
   @override
   String stringMaxLength(Object max) {
-    return 'Max length cannot be greater than $max';
+    return 'Length cannot be greater than $max';
   }
 
   @override
   String stringMinLength(Object min) {
-    return 'Minimum length cannot be lower than $min';
+    return 'Length cannot be lower than $min';
   }
 
   @override

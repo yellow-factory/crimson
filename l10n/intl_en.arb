@@ -32,14 +32,14 @@
   "@required": {
     "description": "Validator<T>.required"
   },
-  "stringMaxLength": "Max length cannot be greater than {max}",
+  "stringMaxLength": "Length cannot be greater than {max}",
   "@stringMaxLength": {
     "description": "StringValidator.maxLength",
     "placeholders": {
       "max": {}
     }
   },
-  "stringMinLength": "Minimum length cannot be lower than {min}",
+  "stringMinLength": "Length cannot be lower than {min}",
   "@stringMinLength": {
     "description": "StringValidator.minLength",
     "placeholders": {

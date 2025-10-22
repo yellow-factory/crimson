@@ -148,13 +148,13 @@ abstract class CrimsonLocalizations {
   /// StringValidator.maxLength
   ///
   /// In en, this message translates to:
-  /// **'Max length cannot be greater than {max}'**
+  /// **'Length cannot be greater than {max}'**
   String stringMaxLength(Object max);
 
   /// StringValidator.minLength
   ///
   /// In en, this message translates to:
-  /// **'Minimum length cannot be lower than {min}'**
+  /// **'Length cannot be lower than {min}'**
   String stringMinLength(Object min);
 
   /// StringValidator.regularExpression
