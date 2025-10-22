@@ -1,3 +1,5 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
 import 'crimson_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -8,12 +10,12 @@ class CrimsonLocalizationsEn extends CrimsonLocalizations {
 
   @override
   String numberMax(Object max) {
-    return 'Please enter a number lower than $max';
+    return 'Please enter a number lower than or equal to $max';
   }
 
   @override
   String numberMin(Object min) {
-    return 'Please enter a number greater than $min.';
+    return 'Please enter a number greater than or equal to $min.';
   }
 
   @override
@@ -31,7 +33,7 @@ class CrimsonLocalizationsEn extends CrimsonLocalizations {
   String get numberRequired => 'Please enter some number different than zero';
 
   @override
-  String get required => 'Please enter some text';
+  String get required => 'The field is mandatory.';
 
   @override
   String stringMaxLength(Object max) {

@@ -1,10 +1,10 @@
 {
   "@@locale": "en",
-  "numberMax": "Please enter a number lower than {max}",
+  "numberMax": "Please enter a number lower than or equal to {max}",
   "@numberMax": {
     "description": "NumberValidator.max"
   },
-  "numberMin": "Please enter a number greater than {min}.",
+  "numberMin": "Please enter a number greater than or equal to {min}.",
   "@numberMin": {
     "description": "NumberValidator.min"
   },

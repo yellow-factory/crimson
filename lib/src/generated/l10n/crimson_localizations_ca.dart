@@ -1,3 +1,5 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
 import 'crimson_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -8,12 +10,12 @@ class CrimsonLocalizationsCa extends CrimsonLocalizations {
 
   @override
   String numberMax(Object max) {
-    return 'Introdueix un nombre inferior a $max.';
+    return 'Introdueix un nombre inferior o igual a $max.';
   }
 
   @override
   String numberMin(Object min) {
-    return 'Introdueix un nombre major de $min.';
+    return 'Introdueix un nombre major o igual a $min.';
   }
 
   @override
