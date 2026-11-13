@@ -4,3 +4,4 @@ output-localization-file: crimson_localizations.dart
 output-class: CrimsonLocalizations
 output-dir: lib/src/generated/l10n/
 untranslated-messages-file: l10n/untranslatedMessages.txt
+header: "// ignore_for_file: deprecated_member_use"

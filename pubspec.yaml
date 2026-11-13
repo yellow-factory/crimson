@@ -6,8 +6,8 @@ homepage: www.theyellowfactory.com
 
 
 environment:
-  sdk: ">=3.9.2 <4.0.0" 
-  flutter: ">=3.35.3 <4.0.0"
+  sdk: ">=3.14.0 <4.0.0"
+  flutter: ">=3.50.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -26,6 +26,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  material_ui: ^1.11.0
 flutter:
   # Adds code generation (synthetic package) support 
   generate: true
